@@ -1,0 +1,83 @@
+.section {
+  max-width: 130rem;
+  margin: 0 auto;
+  margin-top: 30rem;
+}
+
+.section h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section h1 {
+  margin-top: 1.2rem;
+  font-size: 5.8rem;
+  line-height: 6rem;
+  margin-bottom: 7.8rem;
+  width: 50%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.4rem;
+}
+
+.image img {
+  border-radius: 2.4rem;
+}
+
+.content {
+  padding: 6.4rem 0rem 0rem 4.8rem;
+  border-left: 1px solid #cccccc;
+  position: relative;
+}
+
+.content::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  left: -3px;
+  top: -1px;
+  background-color: #cccccc;
+  position: absolute;
+}
+
+.content::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  left: -3px;
+  bottom: -1px;
+  background-color: #cccccc;
+  position: absolute;
+}
+
+.content h3 {
+  font-size: 2.4rem;
+}
+
+.content p {
+  margin-top: 2.4rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.content ul {
+  list-style: none;
+  margin-top: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.content ul li {
+  padding-bottom: 1.4rem;
+}
+
+.content ul li::before {
+  content: "✓";
+  padding-right: 1rem;
+}
