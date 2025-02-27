@@ -1,7 +1,7 @@
 .section {
   max-width: 130rem;
   margin: 0 auto;
-  margin-top: 30rem;
+  margin-top: 35rem;
 }
 
 .section h3 {
@@ -24,8 +24,13 @@
   gap: 6.4rem;
 }
 
+.image {
+  align-self: center;
+}
+
 .image img {
   border-radius: 2.4rem;
+  width: 100%;
 }
 
 .content {
@@ -80,4 +85,47 @@
 .content ul li::before {
   content: "✓";
   padding-right: 1rem;
+}
+
+@media (max-width: 1300px) {
+  .section {
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .section {
+    margin-top: 40rem;
+  }
+
+  .content {
+    padding: 1.8rem 0 0 3.6rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .section {
+    margin-top: 10rem;
+  }
+
+  .section h1 {
+    width: 75%;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .content h3 {
+    font-size: 3.6rem;
+  }
+
+  .content p {
+    font-size: 1.8rem;
+  }
+
+  .content ul {
+    font-size: 1.8rem;
+  }
 }

@@ -1,5 +1,5 @@
 .container {
-  width: 130rem;
+  max-width: 130rem;
   margin: 0 auto;
 }
 
@@ -57,4 +57,35 @@
 
   border-radius: 1.2rem;
   border: none;
+}
+
+/*Windows 1300px*/
+
+@media (max-width: 1300px) {
+  .container {
+    padding: 3.6rem;
+  }
+}
+
+/*1000px*/
+
+@media (max-width: 1000px) {
+  .navbar {
+    padding: 1.6rem 0 2.6rem 0;
+  }
+  .banner {
+    gap: 2.4rem;
+  }
+}
+
+/*650*/
+@media (max-width: 700px) {
+  .banner {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    width: 100%;
+    text-align: center;
+  }
 }

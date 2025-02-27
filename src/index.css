@@ -12,3 +12,33 @@ html {
 body {
   font-family: "Spline Sans", sans-serif;
 }
+
+@media (max-width: 1300px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 512px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 32%;
+  }
+}
