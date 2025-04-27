@@ -4,18 +4,19 @@
   margin-top: 35rem;
 }
 
-.section h3 {
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
 .section h1 {
   margin-top: 1.2rem;
   font-size: 5.8rem;
   line-height: 6rem;
   margin-bottom: 7.8rem;
   width: 50%;
+  color: #677f3f;
+
+  transform: translateY(50px);
+  opacity: 0;
+  animation: textUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 50px;
 }
 
 .container {
@@ -34,9 +35,14 @@
 }
 
 .content {
-  padding: 6.4rem 0rem 0rem 4.8rem;
+  padding: 3.6rem 0rem 0rem 4.8rem;
   border-left: 1px solid #cccccc;
   position: relative;
+
+  opacity: 0;
+  animation: textUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 50px;
 }
 
 .content::before {
@@ -127,5 +133,12 @@
 
   .content ul {
     font-size: 1.8rem;
+  }
+}
+
+@keyframes textUp {
+  to {
+    opacity: 1;
+    transform: translate(0);
   }
 }

@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  height: calc(var(--height) * 2);
+  background-color: #cdfe7d;
+  overflow: hidden;
+  margin-top: 6.4rem;
+
+  padding: 2.8rem 0;
+
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #cdfe7d 10% 90%,
+    transparent
+  );
+}
+
+.container .list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  min-width: calc(var(--width) * var(--quantity));
+
+  position: relative;
+  list-style: none;
+}
+
+.container .list .item {
+  width: var(--width);
+  height: var(--height);
+
+  position: absolute;
+  left: 100%;
+  animation: autoRun 10s linear infinite;
+  animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1));
+}
+
+.container .list .item img {
+  width: 50%;
+}
+
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width) * -1);
+  }
+}
